@@ -20,7 +20,7 @@ function App() {
         <div style={{display: "flex"}}>
           <Leftbar />
           <div style={{flex: 6}}>
-          <Outlet />
+          <Home />
           </div>
           <Rightbar />
         </div>
@@ -32,12 +32,6 @@ function App() {
     {
       path: "/",
       element: <Layout />,
-      children: [
-        {
-          path: "/home",
-          element: <Home />
-        }
-      ]
     },
     {
       path: "/login",
