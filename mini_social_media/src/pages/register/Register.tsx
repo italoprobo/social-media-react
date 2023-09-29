@@ -16,10 +16,10 @@ const Register = () => {
         <div className="right">
           <h1>Registrar</h1>
           <form>
-            <input type="text" placeholder="Username" />
+            <input type="text" placeholder="Nome de usuário" />
+            <input type="text" placeholder="Nome" />
             <input type="email" placeholder="Email" />
             <input type="password" placeholder="Senha" />
-            <input type="text" placeholder="Nome" />
             <button>Registrar</button>
           </form>
         </div>
