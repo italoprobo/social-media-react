@@ -25,7 +25,23 @@ const Posts = () => {
             create_at: new Date(),
             tags: ['programação', 'react', 'estudos', 'front end'],
             active: true    
-        }
+        },
+        {
+            id: 3,
+            descricao: 'Atualizando e aprendendo mais sobre react!!',
+            autor: italo,
+            create_at: new Date(),
+            tags: ['programação', 'react', 'estudos', 'front end'],
+            active: true    
+        },
+        {
+            id: 4,
+            descricao: 'Preciso de uma namorada urgente!',
+            autor: italo,
+            create_at: new Date(),
+            tags: ['amor', 'ex', 'ficante', 'namoro'],
+            active: true    
+        },
     ]
     return(
         <div className="posts">
