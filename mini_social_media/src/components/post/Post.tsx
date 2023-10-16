@@ -6,6 +6,7 @@ import ThumbUpOutlinedIcon from '@mui/icons-material/ThumbUpOutlined';
 import ThumbUpRoundedIcon from '@mui/icons-material/ThumbUpRounded';
 import { useState } from "react";
 import Perfil from "./../../assets/italofoto.jpg"
+import { useAuth } from "../auth/AuthContext";
 
 interface PostProps {
     post: Topico;
@@ -19,14 +20,20 @@ const Post: React.FC<PostProps> = ({ post }) => {
     const [liked, setLiked] = useState(false)
     const [disliked, setDisliked] = useState(false)
 
+    const { user } = useAuth()
+
     const handleLike = () => {
-        setLiked(true)
-        setLikes(likes + 1)
+        if (user){
+            setLiked(true)
+            setLikes(likes + 1)
+        }
     }
 
     const handleDislike = () => {
-        setDisliked(true)
-        setDislikes(dislikes + 1)
+        if (user){
+            setDisliked(true)
+            setDislikes(dislikes + 1)
+        }
     }
 
 
